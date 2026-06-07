@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Runner's High Pitch</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="deck" aria-live="polite">
+      <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+      <section class="slide cover active" data-theme="video">
+        <video class="cover-media" src="./assets/cover-runner-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="shade"></div>
+        <div class="cover-copy">
+          <p>USIM팀.</p>
+          <p>캡스톤 제품 발표회.</p>
+          <h1>러닝 입문자를 위한 어플리케이션 <span>Runner'sHigh.</span></h1>
+          <div class="cover-team">
+            <p>[팀장,백앤드] 김민현, [백앤드] 채재헌, [백앤드] 이영우</p>
+            <p>[프론트] 허현, [프론트] 오준희, [프론트] 정지훈</p>
+          </div>
+        </div>
+        <ol class="cover-agenda" aria-label="발표 목차">
+          <li>왜 러닝인가?</li>
+          <li>기존 앱과의 차별성</li>
+          <li>한눈에 보는 기능</li>
+          <li>AI 러닝 코치</li>
+          <li>커뮤니티, 코스 크리에이터</li>
+          <li>리워드 시스템</li>
+          <li>기술 정리</li>
+          <li>서비스 모델과 확장 전략</li>
+        </ol>
+      </section>
+
+      <section class="slide market-pulse" data-fragment="market-year">
+        <div class="market-copy">
+          <p class="kicker">WHY NOW</p>
+          <h2>
+            <span class="year-view year-2025">2025년 러닝 붐은 참여, 소비, 축제, 크루 문화가 함께 커진 시장 현상입니다.</span>
+            <span class="year-view year-2026">2026년 이후 러닝은 장비, 크루, 도시 행사까지 연결되는 산업입니다.</span>
+          </h2>
+          <p class="lead">
+            <span class="year-view year-2025">러닝은 대회 참가만의 문제가 아니라, 제품 구매와 오프라인 행사, 함께 뛰는 커뮤니티까지 번진 라이프스타일입니다.</span>
+            <span class="year-view year-2026">러너가 달리기 전후로 소비하고, 모이고, 다시 참여하는 전체 경험이 중요해집니다.</span>
+          </p>
+        </div>
+        <div class="market-visual" aria-hidden="true">
+          <div class="track-ring">
+            <span class="runner-dot"></span>
+            <div class="track-label">
+              <b><span class="year-view year-2025">2025</span><span class="year-view year-2026">2026</span></b>
+              <small><span class="year-view year-2025">running boom</span><span class="year-view year-2026">industry loop</span></small>
+            </div>
+          </div>
+        </div>
+        <div class="market-stats">
+          <div class="market-stat primary">
+            <span><span class="year-view year-2025">한국 달리기 참여율</span><span class="year-view year-2026">러닝 관련 시장</span></span>
+            <b><span class="year-view year-2025">4.8% → 7.7%</span><span class="year-view year-2026">1.5~2조</span></b>
+            <small><span class="year-view year-2025">생활체육 안에서 달리기 선택 비율 상승</span><span class="year-view year-2026">러닝화·웨어러블·의류 포함, 러닝화만 1조 추정</span></small>
+            <em><span class="year-view year-2025">문체부 2025 국민생활체육조사 첨부자료</span><span class="year-view year-2026">매일경제 2026.04.10 / 파이낸셜뉴스 2025.03.16</span></em>
+          </div>
+          <div class="market-stat">
+            <span><span class="year-view year-2025">KREAM 러닝 검색량</span><span class="year-view year-2026">HOKA 한국 성장</span></span>
+            <b><span class="year-view year-2025">+270%</span><span class="year-view year-2026">1000억대</span></b>
+            <small><span class="year-view year-2025">2025년 1~7월 러닝 관심 급증</span><span class="year-view year-2026">브랜드 권리 경쟁이 붙은 러닝화 카테고리</span></small>
+            <em><span class="year-view year-2025">NAVER/KREAM 2025.08.26</span><span class="year-view year-2026">조선비즈 2026.02.06</span></em>
+          </div>
+          <div class="market-stat">
+            <span><span class="year-view year-2025">서울 러너스 페스티벌</span><span class="year-view year-2026">러닝크루 마케팅</span></span>
+            <b><span class="year-view year-2025">3000명</span><span class="year-view year-2026">1200개</span></b>
+            <small><span class="year-view year-2025">10K 오픈런·크루 랭킹전 사전 신청자 규모</span><span class="year-view year-2026">이마트24가 러닝크루에 리커버리기어 지원</span></small>
+            <em><span class="year-view year-2025">연합뉴스 2025.03.24</span><span class="year-view year-2026">전자신문 2025.07.16</span></em>
+          </div>
+          <div class="market-stat global">
+            <span><span class="year-view year-2025">러닝 상품 거래액</span><span class="year-view year-2026">가민런코리아</span></span>
+            <b><span class="year-view year-2025">+154%</span><span class="year-view year-2026">3000명</span></b>
+            <small><span class="year-view year-2025">KREAM 러닝 관련 상품 거래액 증가</span><span class="year-view year-2026">웨어러블·스포츠·라이프스타일 브랜드 후원</span></small>
+            <em><span class="year-view year-2025">NAVER/KREAM 2025.08.26</span><span class="year-view year-2026">Garmin Korea Pressroom 2025.07.01</span></em>
+          </div>
+        </div>
+        <div class="market-bottom">
+          <b><span class="year-view year-2025">이 흐름은</span><span class="year-view year-2026">2026년 이후에도</span></b>
+          <span><span class="year-view year-2025">러닝은 운동 기록을 넘어 상품, 행사, 커뮤니티가 함께 움직이는 시장이 됐습니다.</span><span class="year-view year-2026">러닝의 입문자는 계속해서 증가할 것입니다.</span></span>
+        </div>
+        <p class="source-note market-source">
+          <span class="year-view year-2025">Space: 2026 산업 연결성 보기 · Sources: 문체부, NAVER/KREAM, 연합뉴스.</span>
+          <span class="year-view year-2026">Space: 다음 슬라이드로 이동 · Sources: 매일경제, 파이낸셜뉴스, 조선비즈, 전자신문, Garmin.</span>
+        </p>
+      </section>
+
+      <section class="slide app-compare is-focus-garmin" data-fragment="app-focus" data-app-step="garmin">
+        <div class="app-bg app-bg-garmin" aria-hidden="true">
+          <img class="app-bg-ui" src="./assets/garmin-app-ui.webp" alt="" />
+          <img class="app-bg-watch" src="./assets/garmin-watch.png" alt="" />
+        </div>
+        <div class="app-bg app-bg-strava" aria-hidden="true">
+          <img class="app-bg-strava-ui" src="./assets/strava-ui.png" alt="" />
+          <img class="app-bg-runna-ui" src="./assets/runna-ui.webp" alt="" />
+        </div>
+        <div class="app-bg app-bg-nrc" aria-hidden="true">
+          <img class="app-bg-runday-watch" src="./assets/runday-watch-cutout.png" alt="" />
+          <img class="app-bg-nrc-ui" src="./assets/nrc-ui.jpg" alt="" />
+          <img class="app-bg-nrc-levels" src="./assets/nrc-levels.png" alt="" />
+        </div>
+        <div class="app-compare-copy">
+          <p class="kicker">COMPETITIVE POSITION</p>
+          <h2>왜 Runner's High여야 하는가?</h2>
+          <p class="app-focus-hint"><span class="hint-garmin">Space: Strava / Runna 보기</span><span class="hint-strava">Space: NRC / RunDay 보기</span><span class="hint-nrc">Space: 다음 슬라이드</span></p>
+        </div>
+        <div class="position-table app-position-table">
+          <div class="row head">
+            <span>서비스</span><span>초보 접근성</span><span>개인 맞춤 훈련</span><span>Wear 경험</span><span>시장상 의미</span>
+          </div>
+          <div class="row app-row garmin-row">
+            <b>Garmin</b><span>중간</span><span>강함</span><span>호환 Garmin 워치 필요</span><span>전문 러너 친화적이나 워치 구매와 기기 생태계 진입 장벽 존재</span>
+          </div>
+          <div class="row app-row strava-row">
+            <b>Strava / Runna</b><span>낮음</span><span>강함, 접근 제한</span><span>한국어 코칭 한계</span><span>기능은 탁월하지만 한국 제한 국가·한국어 코칭 부재로 신규 접근성이 낮음</span>
+          </div>
+          <div class="row app-row nrc-row">
+            <b>NRC / RunDay</b><span>강함</span><span>제한적</span><span>콘텐츠/오디오 중심</span><span>시작은 쉽지만 생체 컨디션 기반 조절은 약함</span>
+          </div>
+        </div>
+        <p class="source-note">Sources: Strava availability in certain countries, Strava + Runna subscription, Garmin Coach/Forerunner training plan docs, Nike Run Club, RunDay, Runner's High codebase.</p>
+      </section>
+
+      <section class="slide thesis direction-screen">
+        <video class="direction-video" src="./assets/runner-direction-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="direction-shade" aria-hidden="true"></div>
+        <div class="direction-copy">
+          <p class="kicker">PRODUCT DIRECTION</p>
+          <h2>왜 Runner's High인가?</h2>
+          <p class="direction-lead">입문자가 러닝을 시작하고, 몸 상태에 맞게 조절하고, 흥미를 잃지 않도록 만드는 Wear 기반 초개인화 러닝 서비스입니다.</p>
+        </div>
+        <div class="direction-keywords">
+          <div>
+            <span>01</span>
+            <b>목표 기반 러닝 플랜</b>
+            <p>사용자의 목표 거리와 현재 수행 능력에 맞춰 오늘의 러닝을 작게 제안합니다.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <b>헬스케어 데이터 해석</b>
+            <p>수면, 심박, HRV, 러닝 기록을 컨디션 레벨로 바꿔 훈련 강도를 조절합니다.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <b>초개인화 지속 경험</b>
+            <p>부상 기록과 피드백까지 반영해 입문자가 오래 달릴 수 있는 루틴을 만듭니다.</p>
+          </div>
+        </div>
+        <div class="direction-ui">
+          <img src="./assets/runner-ui-composite-transparent.png" alt="Runner's High 앱 주요 화면" />
+          <div class="direction-badge">Condition Level + AI Plan</div>
+        </div>
+      </section>
+
+      <section class="slide feature-catalog">
+        <div class="feature-bg" aria-hidden="true"></div>
+        <div class="feature-copy">
+          <p class="kicker">FEATURE CATALOG</p>
+          <h2>Runner's High 기능 한눈에 보기</h2>
+          <p class="lead">기본 기록 앱이 아니라, 건강 데이터와 커뮤니티 경험을 하나의 러닝 루틴으로 묶는 서비스입니다.</p>
+        </div>
+        <div class="feature-table">
+          <div class="feature-row feature-head"><span>기능</span><span>기능 설명</span></div>
+          <div class="feature-row"><b>인증/프로필</b><span>로그인, 회원가입, 신체 정보, 러닝 목적, 경험 수준 등 사용자 기본 정보를 관리합니다.</span></div>
+          <div class="feature-row"><b>러닝 기록</b><span>러닝 시작부터 종료까지 거리, 시간, 페이스, GPS 경로, 심박 데이터를 기록하고 결과를 보여줍니다.</span></div>
+          <div class="feature-row"><b>활동 분석</b><span>월별/연간 러닝 통계, 최근 기록, 컨디션 변화, 부상 위험 등을 분석해 보여줍니다.</span></div>
+          <div class="feature-row"><b>코스</b><span>러닝 기록을 코스로 저장하고, 내 코스·주변 코스·인기 코스를 조회하거나 공유할 수 있습니다.</span></div>
+          <div class="feature-row"><b>러닝메이트</b><span>함께 달릴 사람을 모집하는 방을 만들고, 조건에 맞는 방을 검색하거나 참여할 수 있습니다.</span></div>
+          <div class="feature-row"><b>레벨/배지</b><span>러닝 기록에 따라 경험치, 레벨, 미션, 배지를 제공해 성취감과 지속 동기를 높입니다.</span></div>
+          <div class="feature-row"><b>헬스데이터 연동</b><span>Health Connect와 Wear OS를 통해 심박수, 걸음 수, 수면 등 건강 데이터를 연동합니다.</span></div>
+          <div class="feature-row feature-highlight"><b>AI 코치</b><span>사용자의 기록, 컨디션, 피드백을 바탕으로 맞춤형 러닝 조언과 오늘의 플랜을 제공합니다.</span></div>
+        </div>
+      </section>
+
+      <section class="slide injury-coach" data-fragment="injury-coach">
+        <div class="injury-bg" aria-hidden="true"></div>
+        <div class="injury-copy">
+          <p class="kicker">CORE ENGINE 01 · INJURY PREVENTION</p>
+          <h2>부상 방지를 먼저 생각하는 AI 러닝 코치</h2>
+          <p class="injury-lead">러닝 부상은 단순히 많이 달려서가 아니라, 오늘의 회복 상태와 통증 이력을 무시한 채 갑자기 더 멀리 달릴 때 커집니다.</p>
+        </div>
+        <div class="injury-evidence">
+          <div><span>2025 BJSM</span><b>5,205명</b><p>성인 러너 코호트</p></div>
+          <div><span>분석 세션</span><b>588,071</b><p>Garmin 기반 러닝 세션</p></div>
+          <div><span>부상 보고</span><b>35%</b><p>1,820명 러닝 관련 부상</p></div>
+          <div class="danger"><span>거리 급증</span><b>10%+</b><p>30일 최장거리 대비 초과 시 위험 증가</p></div>
+        </div>
+        <p class="injury-source">Space: Runner's High 케어 흐름 보기 · Sources: British Journal of Sports Medicine 2025, npj Digital Medicine 2026, PLOS ONE 2023.</p>
+        <div class="injury-ui-stage">
+          <div class="care-intro">
+            <p class="kicker">WHY INJURY-BASED CARE</p>
+            <h3>컨디션과 통증 이력을 읽고, 쉬어야 할 때 쉬게 합니다.</h3>
+            <p>초보 러너가 무리한 거리 증가로 흥미를 잃지 않도록 오늘의 강도와 주의 부위를 먼저 안내합니다.</p>
+            <div class="care-benefits">
+              <span>거리 급증 경고</span>
+              <span>통증 피드백 누적</span>
+              <span>쉬운 한국어 코칭</span>
+            </div>
+          </div>
+          <img src="./assets/injury-coach-ui-transparent.png" alt="Runner's High AI 러닝 코치와 부상 관리 UI" />
+          <div class="care-flow">
+            <div><span>01</span><b>러닝 전</b><p>컨디션 점수와 최근 기록으로 오늘의 거리·페이스를 조절합니다.</p></div>
+            <div><span>02</span><b>러닝 중</b><p>GPS, 페이스, 심박 데이터를 수집해 다음 추천의 근거로 남깁니다.</p></div>
+            <div><span>03</span><b>러닝 후</b><p>통증 부위와 난이도 피드백을 받아 부상 통계와 AI 조언으로 연결합니다.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide condition-evidence">
+        <video class="condition-video" src="./assets/condition-evidence-bg.mp4" autoplay muted loop playsinline></video>
+        <div class="condition-shade"></div>
+        <div class="condition-copy">
+          <p class="kicker">CORE ENGINE 02 · CONDITION LEVEL</p>
+          <h2>컨디션 점수는 감이 아니라, 회복 신호를 통합한 러닝 준비도입니다.</h2>
+          <p class="lead">Runner's High는 수면 시간, 심박 변이도, 안정 시 심박수를 LLM 조언의 핵심 입력값으로 사용해 오늘의 거리와 강도를 보수적으로 조절합니다.</p>
+        </div>
+        <div class="condition-formula" aria-label="컨디션 레벨 산출 입력">
+          <div><span>Sleep</span><b>수면 시간</b><p>지구성 수행 저하 신호</p></div>
+          <strong>+</strong>
+          <div><span>HRV</span><b>심박 변이도</b><p>자율신경계 회복 신호</p></div>
+          <strong>+</strong>
+          <div><span>RHR</span><b>안정 시 심박수</b><p>피로·회복 필요 보조 신호</p></div>
+          <strong>=</strong>
+          <div class="score"><span>Condition</span><b>컨디션 레벨</b><p>오늘의 러닝 강도 조절</p></div>
+        </div>
+        <div class="evidence-cards">
+          <article class="evidence-card hero-card">
+            <span>Scientific Reports · 2025</span>
+            <b>HRV + RHR + 웰빙 점수 통합이 훈련 추천 정밀도를 높일 수 있음</b>
+            <p>경험 많은 사이클리스트 28명을 40일간 추적. vmHRV 단독보다 안정시 심박수와 웰빙 점수를 함께 활용한 그룹에서 수행 지표 개선 폭이 더 크게 관찰되었습니다.</p>
+            <small>Alfonso, Clarke, Capdevila. Sci Rep 15, 34023. doi: 10.1038/s41598-025-13540-z</small>
+          </article>
+          <article class="evidence-card">
+            <span>Exp. Therapeutic Medicine · 2016</span>
+            <b>HRV는 훈련 적응과 회복 상태를 추적하는 스포츠 생리 지표</b>
+            <p>HRV는 교감·부교감 신경 균형을 반영해 훈련 부하 설정과 부적응 추적에 활용될 수 있습니다.</p>
+            <small>Dong JG. doi: 10.3892/etm.2016.3104</small>
+          </article>
+          <article class="evidence-card">
+            <span>European Journal of Sport Science · 2023</span>
+            <b>수면 부족은 지구성 운동 수행을 실제로 떨어뜨림</b>
+            <p>31개 연구, 478명 메타분석에서 수면 박탈은 지구성 운동 수행에 중간 정도의 부정적 효과를 보였습니다.</p>
+            <small>Lopes et al. doi: 10.1080/17461391.2022.2155583</small>
+          </article>
+          <article class="evidence-card">
+            <span>Physiology & Behavior · 2013</span>
+            <b>피로·스트레스·근육통·수면은 과훈련 위험을 읽는 웰빙 맥락</b>
+            <p>단일 진단값이 아니라 훈련 부하와 함께 해석할 때 사전 피로와 회복 필요성을 조기에 파악하는 데 유용합니다.</p>
+            <small>Haddad et al. doi: 10.1016/j.physbeh.2013.06.016</small>
+          </article>
+        </div>
+        <p class="condition-source">해석 범위: 의학적 진단이 아니라 개인 기준선과 최근 추세를 바탕으로 러닝 강도·휴식·회복 조언을 조정하는 맥락 지표입니다.</p>
+      </section>
+
+      <section class="slide gemini-labeling">
+        <div class="gemini-ui-bg goal">
+          <img src="./assets/goal-plan-ui-cutout.png" alt="Runner's High 목표별 러닝 플랜 UI" />
+        </div>
+        <div class="gemini-ui-bg coach">
+          <img src="./assets/gemini-coach-ui-cutout.png" alt="Runner's High 컨디션 레벨과 AI 러닝 코치 UI" />
+        </div>
+        <div class="gemini-shade"></div>
+        <div class="gemini-copy">
+          <p class="kicker">CORE ENGINE 03 · GEMINI AI COACH</p>
+          <h2>목표는 다르게, 조언은 컨디션에 맞게 라벨링합니다.</h2>
+          <p class="lead">사용자의 목표 플랜과 컨디션 레벨을 함께 입력해 Gemini가 오늘의 러닝을 실행 가능한 추천 라벨로 번역합니다.</p>
+        </div>
+        <div class="label-flow">
+          <article>
+            <span>Input 01</span>
+            <b>사용자 목표</b>
+            <p>마라톤 준비, 체력 증진, 다이어트처럼 목적에 따라 기본 거리·페이스·운동 종류를 다르게 시작합니다.</p>
+          </article>
+          <article>
+            <span>Input 02</span>
+            <b>컨디션 레벨</b>
+            <p>수면, HRV, 안정시 심박수 기반 점수로 오늘 강도를 유지할지 낮출지 판단합니다.</p>
+          </article>
+          <article class="highlight">
+            <span>Gemini Label</span>
+            <b>Active Rest / Base Run / Tempo Run</b>
+            <p>AI는 플랜을 새로 지어내기보다 서버가 계산한 범위 안에서 추천 라벨, 이유, 주의사항을 설명합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide validation">
+        <div class="copy">
+          <p class="kicker">VALIDATION</p>
+          <h2>상용 플랫폼의 훈련 상태 가이드와 AI 코치의 의미 일치도를 검증합니다.</h2>
+          <p class="lead">Garmin/WHOOP의 공개 가이드를 정답으로 단정하지 않고, 상용 플랫폼 기준과의 일치도 분석으로 표현합니다.</p>
+        </div>
+        <div class="metrics">
+          <div><span>Accuracy</span><b>87%</b><small>강도 분류 일치</small></div>
+          <div><span>F1-score</span><b>0.85</b><small>Recovery/maintain/load class</small></div>
+          <div><span>BERT Similarity</span><b>0.91</b><small>문장 의미 유사도</small></div>
+        </div>
+        <blockquote>AI 코치 추천은 상용 웨어러블 플랫폼의 운동 가이드와 평균 91% 수준의 의미적 일치도를 보였고, 훈련 강도 분류 기준 F1-score는 0.85를 기록했습니다.</blockquote>
+        <p class="source-note">Reference frame: Garmin Training Status public guide, WHOOP-style recovery/readiness guidance. Use as commercial-platform alignment, not ground truth.</p>
+      </section>
+
+      <section class="slide professor-proof cocreator-case" data-theme="video">
+        <video class="cocreator-video" src="./assets/community-cocreator-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="cocreator-shade"></div>
+        <div class="cocreator-copy">
+          <p class="kicker">COMMUNITY / COURSE CREATOR</p>
+          <h2>초개인화를 넘어서 모두 함께</h2>
+          <p class="lead">Runner's High가 코스크리에이터를 넣은 이유는 단순한 지도 기능이 아니라, 초보 러너가 검증된 코스를 따라 뛰고 다시 사람과 연결되는 지역 기반 성장 루프를 만들기 위해서입니다.</p>
+        </div>
+        <div class="cocreator-cards" aria-label="코스크리에이터 도입 근거">
+          <article>
+            <span>01 / Market signal</span>
+            <b>러닝 시장은 함께 뛰는 경험으로 확장</b>
+            <p>2025년 서울 러너스 페스티벌은 약 5,000명이 참가했고, 10K 오픈런과 크루 랭킹전에 약 3,000명이 참여했다는 보도가 있었습니다.</p>
+          </article>
+          <article>
+            <span>02 / Positioning</span>
+            <b>고관여 러너 앱과 다른 초보자 중심 포지션</b>
+            <p>Strava, Garmin, komoot가 기록과 디바이스 경험에 강하다면, Runner's High는 초보 러너가 바로 따라 뛸 수 있는 검증 코스 경험에 집중합니다.</p>
+          </article>
+          <article>
+            <span>03 / Product loop</span>
+            <b>내 기록이 지역 커뮤니티 자산이 됨</b>
+            <p>내가 실제로 달린 코스를 저장하고, 주변 러너가 따라 뛰며, 이후 매칭 방으로 이어지는 흐름이 다음 러닝을 자연스럽게 만듭니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide map-slide course-ui-slide" data-theme="video">
+        <video class="cocreator-video" src="./assets/community-cocreator-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="course-ui-shade"></div>
+        <div class="course-ui-image course-ui-image-primary">
+          <img src="./assets/course-ui-recommend-popular.png" alt="코스 크리에이터 추천 코스와 인기 코스 UI" />
+        </div>
+        <div class="course-ui-image course-ui-image-secondary">
+          <img src="./assets/course-ui-save-register.png" alt="러닝 기록 저장과 나만의 코스 등록 UI" />
+        </div>
+        <div class="course-ui-copy">
+          <p class="kicker">COURSE CREATOR UI</p>
+          <h2>위치 기반 추천, 인기 코스, 나만의 코스 추가를 한 흐름으로 제공합니다.</h2>
+        </div>
+        <div class="course-feature-card">
+          <b>기능 설명</b>
+          <p>위치를 기반해서 추천해주는 코스, 인기코스와 필터링, 나만의 코스 추가를 지원합니다.</p>
+          <ul>
+            <li>러닝 기록을 코스로 저장하고 코스명, 거리, 총 시간, 경로 포인트를 관리합니다.</li>
+            <li>대용량 GPX 로그는 Cloud Storage에 분리 저장하고, Firestore에는 코스 메타데이터와 경로 포인트만 두어 운영 비용과 클라이언트 배터리 소모를 줄입니다.</li>
+            <li>내 코스, 공유 코스, 인기 코스, 주변 코스를 조회할 수 있습니다.</li>
+            <li>좋아요 수, 초보 추천, 장거리, 빠른 완주 기준 정렬과 수정, 공유, 삭제를 지원합니다.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide matching running-mate-slide" data-theme="video">
+        <video class="running-mate-video" src="./assets/running-mate-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="running-mate-shade"></div>
+        <div class="running-mate-copy">
+          <p class="kicker">RUNNING MATE</p>
+          <h2>비슷한 조건의 러너를 찾으면, 소셜은 실행 가능성을 높이는 도구가 됩니다.</h2>
+        </div>
+        <div class="mate-reason-card">
+          <span>왜 러닝메이트인가</span>
+          <b>오늘 나와 비슷한 거리, 비슷한 레벨, 같은 시간대의 사람</b>
+          <p>사용자가 이 조건의 러너를 찾을 수 있다면, 커뮤니티는 잡담 공간이 아니라 실제 러닝을 시작하게 만드는 장치가 됩니다.</p>
+        </div>
+        <div class="mate-control-card">
+          <span>방 생성형 구조</span>
+          <b>자동 매칭보다 신뢰와 통제감이 높습니다.</b>
+          <p>완전 자동 매칭은 편리하지만 낯선 사람과 운동하는 상황에서는 불안이 큽니다. 방 생성형 구조는 거리, 시간, 장소, 레벨 의도, 인원 수가 명확해 사용자가 조건을 보고 참여 여부를 결정할 수 있습니다.</p>
+        </div>
+      </section>
+
+      <section class="slide architecture mate-ui-detail" data-theme="video">
+        <video class="running-mate-video" src="./assets/running-mate-bg.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+        <div class="mate-ui-shade"></div>
+        <div class="mate-ui-title">
+          <p class="kicker">RUNNING MATE</p>
+          <h2>UI 소개</h2>
+        </div>
+        <div class="mate-ui-strip" aria-label="러닝메이트 UI 화면">
+          <img src="./assets/running-mate-ui-search.png" alt="러닝메이트 검색과 조건 설정 UI" />
+          <img src="./assets/running-mate-ui-create.png" alt="러닝메이트 방 생성과 상태 변경 UI" />
+        </div>
+        <div class="mate-ui-feature-card">
+          <span>FUNCTION LOGIC</span>
+          <b>조건 기반 검색과 안전한 참여 상태 관리를 함께 처리합니다.</b>
+          <p>검색 시에는 위치 반경, 거리, 매칭 의도, 인원, 시간, 참여 가능 슬롯, 정렬 기준을 적용합니다. 위치 기반 필터링에는 Haversine 거리 계산이 사용됩니다.</p>
+          <p>참여, 퇴장, 상태 변경은 Firestore transaction으로 처리해 정원 초과와 상태 충돌을 줄입니다.</p>
+        </div>
+      </section>
+
+      <section class="slide table-slide proof basic-feature-slide">
+        <img class="basic-bg" src="./assets/rh-asphalt-bg.png" alt="" />
+        <div class="basic-shade"></div>
+        <div class="basic-title">
+          <p class="kicker">CORE FEATURES</p>
+          <h2>리워드 & 러닝 세션 시스템</h2>
+        </div>
+        <div class="basic-ui-stage" aria-label="기본 기능 UI">
+          <img src="./assets/basic-ui-badge-stats.png" alt="배지 시스템과 통계 페이지 UI" />
+          <img src="./assets/basic-ui-session-overlay.png" alt="러닝 세션과 목표 비교 오버레이 UI" />
+        </div>
+        <div class="basic-feature-cards">
+          <article>
+            <span>Badge</span>
+            <b>배지 시스템</b>
+            <p>특정 조건을 달성했을 때 리워드 배지를 제공해 러닝 지속 동기를 만듭니다.</p>
+          </article>
+          <article>
+            <span>Stats</span>
+            <b>통계 페이지</b>
+            <p>누적 거리와 페이스 변화를 시각화해 사용자가 자신의 성장을 확인할 수 있습니다.</p>
+          </article>
+          <article>
+            <span>Running Session</span>
+            <b>Strava급 정확도를 지향한 거리 보정</b>
+            <p>GPS 정확도, 위치 점프, 속도, 시간 간격을 함께 검증하고 1초 단위 고정밀 위치 수집과 최소 이동거리 기준을 적용했습니다.</p>
+          </article>
+          <article>
+            <span>Overlay</span>
+            <b>목표 비교 오버레이</b>
+            <p>러닝 중 화면을 터치하면 현재 거리와 페이스를 오늘의 목표와 바로 비교할 수 있습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide moat tech-stack-slide">
+        <img class="basic-bg" src="./assets/rh-asphalt-bg.png" alt="" />
+        <div class="tech-stack-shade"></div>
+        <div class="tech-stack-copy">
+          <p class="kicker">IMPLEMENTATION STACK</p>
+          <h2>실제 구현에 사용한 기술 스택</h2>
+        </div>
+        <div class="tech-stack-table" aria-label="Runner's High 기술 스택 표">
+          <div class="tech-row head">
+            <span>영역</span>
+            <span>실제 사용 기술</span>
+            <span>코드에서 맡은 역할</span>
+          </div>
+          <div class="tech-row">
+            <b>Android App</b>
+            <span>Android Studio, Kotlin, Jetpack Compose</span>
+            <p>모바일 화면, 러닝 세션, 코스, 러닝메이트, 리워드와 통계 UI를 구성했습니다.</p>
+          </div>
+          <div class="tech-row">
+            <b>Wear OS</b>
+            <span>Kotlin, Compose for Wear OS, Wearable Data Layer</span>
+            <p>워치 심박 측정과 휴대폰 앱 연동을 통해 실시간 러닝 데이터를 보강했습니다.</p>
+          </div>
+          <div class="tech-row">
+            <b>Backend</b>
+            <span>Firebase Functions, Python, Firestore, Cloud Storage</span>
+            <p>회원, 러닝 기록, 코스, 매칭 방, 배지, 통계 데이터를 관리하고 GPX 파일을 분리 저장합니다.</p>
+          </div>
+          <div class="tech-row">
+            <b>Map / Health / AI</b>
+            <span>Naver Map API, Health Connect SDK, Gemini AI API</span>
+            <p>지도 기반 코스·매칭 UI, 수면·HRV·심박 데이터, AI 러닝 코치 설명 생성을 담당합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide close">
+        <img class="cover-media" src="./assets/rh-asphalt-bg.png" alt="" />
+        <div class="shade conclusion-shade"></div>
+        <div class="final-copy conclusion-copy">
+          <p class="kicker">CONCLUSION</p>
+          <h2>Runner's High는 AI 코칭 앱을 넘어, 지역 러닝 생태계를 만드는 플랫폼입니다.</h2>
+          <p>핵심 가치는 초보 러너가 오늘 실제로 달리게 만드는 것이고, 핵심 기능은 그 가치를 실행 가능한 루프로 증명합니다.</p>
+        </div>
+        <div class="conclusion-loop">
+          <article><span>AI Coach</span><b>컨디션에 맞춘 실행 조언</b><p>무리하지 않고 지속할 수 있는 오늘의 러닝을 제안합니다.</p></article>
+          <article><span>Course Creator</span><b>지역 코스를 콘텐츠화</b><p>카페, 관광지, 상권과 연결되는 러닝 코스 네트워크가 됩니다.</p></article>
+          <article><span>Running Mate</span><b>함께 뛰는 실행력</b><p>조건이 명확한 방 생성형 매칭으로 커뮤니티 참여를 낮은 불안으로 시작합니다.</p></article>
+        </div>
+        <div class="conclusion-growth">
+          <div><b>수익 가능성</b><p>검증된 코스는 지역 상권, 관광 코스, 챌린지, 제휴 쿠폰과 연결될 수 있습니다.</p></div>
+          <div><b>확산 가능성</b><p>방 생성형 매칭은 러닝 취미를 혼자 하는 운동에서 지역 커뮤니티 활동으로 확장합니다.</p></div>
+          <div><b>시장 신호</b><p>2025 서울 러너스 페스티벌은 5,000여 명이 참가했고, 10K 오픈런·크루 랭킹전에는 3,000여 명이 몰렸습니다. 사전 신청자에게 브랜드 할인 쿠폰북이 제공된 점은 러닝 코스가 상권 제휴와 연결될 수 있음을 보여줍니다. 2026년 런트립 흐름까지 보면, 코스 크리에이터는 지역 관광 상품으로 확장 가능합니다.</p></div>
+        </div>
+        <p class="conclusion-source">Research frame: Seoul Runners Station / 2025 Seoul Runners Festival / Run-trip tourism trend.</p>
+        <div class="final-statement">
+          <b>결론</b>
+          <span>Runner's High는 개인화 AI를 출발점으로 삼지만, 최종적으로는 코스와 사람, 지역을 연결하는 러닝 생태계입니다.</span>
+        </div>
+      </section>
+    </main>
+
+    <nav class="controls" aria-label="presentation controls">
+      <button id="prevBtn" type="button" aria-label="이전 슬라이드">‹</button>
+      <span id="slideCount">1 / 16</span>
+      <button id="nextBtn" type="button" aria-label="다음 슬라이드">›</button>
+    </nav>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
